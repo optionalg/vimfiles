@@ -63,11 +63,6 @@ dosini:
     repo: https://bitbucket.org/xuhdev/syntax-dosini.vim
     type: hg
 
-ipython:
-    desc: ipython 交互
-    home: http://www.vim.org/scripts/script.php?script_id=3709
-    repo: https://github.com/ivanov/vim-ipython.git
-
 renamer:
     desc: 文件重命名
     home: http://www.vim.org/scripts/script.php?script_id=1721
@@ -92,3 +87,13 @@ tabular:
     desc: 文本对齐格式化
     home: http://www.vim.org/scripts/script.php?script_id=3464
     repo: https://github.com/godlygeek/tabular.git
+
+nginx:
+    desc: nginx配置文件语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=1886
+    repo: https://github.com/vim-scripts/nginx.vim.git
+
+rsttable:
+    desc: reStructuredText 表格对齐格式化
+    home: http://www.vim.org/scripts/script.php?script_id=3041
+    repo: https://github.com/vim-scripts/RST-Tables.git

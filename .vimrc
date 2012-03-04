@@ -344,22 +344,28 @@ autocmd BufWinEnter * call PreviewDown()
 " 禁用视觉响铃
 autocmd GUIEnter * set visualbell t_vb=
 
-" 文件类型 {{{2
+" 语法高亮 {{{2
 " --------
 
-" vimperatorrc 配置文件高亮
+" vimperatorrc 配置文件
 autocmd BufNewFile,BufRead *vimperatorrc* setfiletype vim
 
-" proto 语法高亮
-autocmd! BufNewFile,BufRead *.proto setfiletype proto
+" nginx 配置文件
+autocmd BufNewFile,BufRead /etc/nginx/* setfiletype nginx
 
-" moin 语法高亮
+" markdown
+autocmd BufNewFile,BufRead *.md setfiletype markdown
+
+" proto
+autocmd BufNewFile,BufRead *.proto setfiletype proto
+
+" moin
 autocmd BufNewFile,BufRead *.moin setfiletype moin
 
-" lrc 语法高亮
+" lrc
 autocmd BufNewFile,BufRead *.lrc setfiletype lrc
 
-" cue 语法高亮
+" cue
 autocmd BufNewFile,BufRead *.cue setfiletype cue
 
 " 插件设置 {{{1
