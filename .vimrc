@@ -368,6 +368,9 @@ autocmd BufNewFile,BufRead *.lrc setfiletype lrc
 " cue
 autocmd BufNewFile,BufRead *.cue setfiletype cue
 
+" go
+autocmd BufNewFile,BufRead *.go setfiletype go
+
 " 插件设置 {{{1
 " ========
 

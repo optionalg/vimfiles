@@ -97,3 +97,9 @@ rsttable:
     desc: reStructuredText 表格对齐格式化
     home: http://www.vim.org/scripts/script.php?script_id=3041
     repo: https://github.com/vim-scripts/RST-Tables.git
+
+golang:
+    desc: go 语法高亮
+    home: http://code.google.com/p/go/
+    repo: http://go.googlecode.com/hg/misc/vim/
+    type: dir

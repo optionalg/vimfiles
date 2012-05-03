@@ -37,6 +37,9 @@ def main():
         else:
             repo_type = info['type']
 
+        if repo_type == 'dir':
+            continue
+
         repo_url = info['repo']
         repo_name = "%s.%s" % (name, repo_type)
         if repo_type == 'git':
