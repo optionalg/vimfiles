@@ -103,3 +103,8 @@ golang:
     home: http://code.google.com/p/go/
     repo: http://go.googlecode.com/hg/misc/vim/
     type: dir
+
+actionscript:
+    desc: action 语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=1585
+    repo: https://github.com/vim-scripts/actionscript.vim--Jethani

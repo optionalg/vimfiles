@@ -371,6 +371,11 @@ autocmd BufNewFile,BufRead *.cue setfiletype cue
 " go
 autocmd BufNewFile,BufRead *.go setfiletype go
 
+" actionscript
+augroup filetypedetect
+    autocmd! BufNewFile,BufRead *.as setfiletype actionscript
+augroup end
+
 " 插件设置 {{{1
 " ========
 
