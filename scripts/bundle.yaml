@@ -57,12 +57,6 @@ pyflakes:
     home: http://www.vim.org/scripts/script.php?script_id=2441
     repo: https://github.com/kevinw/pyflakes-vim.git
 
-dosini:
-    desc: ini 语法高亮
-    home: http://www.vim.org/scripts/script.php?script_id=3747
-    repo: https://bitbucket.org/xuhdev/syntax-dosini.vim
-    type: hg
-
 renamer:
     desc: 文件重命名
     home: http://www.vim.org/scripts/script.php?script_id=1721
