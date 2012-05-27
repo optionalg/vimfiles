@@ -74,7 +74,7 @@ pyref:
     repo: https://github.com/xolox/vim-pyref.git
 
 matchtag:
-    desc: html 当前对应签高亮
+    desc: html 当前对应标签高亮
     home: http://www.vim.org/scripts/script.php?script_id=3818
     repo: https://github.com/gregsexton/MatchTag.git
 
@@ -89,7 +89,7 @@ tabular:
     repo: https://github.com/godlygeek/tabular.git
 
 nginx:
-    desc: nginx配置文件语法高亮
+    desc: nginx 配置文件语法高亮
     home: http://www.vim.org/scripts/script.php?script_id=1886
     repo: https://github.com/vim-scripts/nginx.vim.git
 
