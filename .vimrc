@@ -267,6 +267,9 @@ nnoremap <leader>s :%s/
 vnoremap <a-s> <esc>:s/
 vnoremap <leader>s :s/
 
+" 尾部空白字符
+nnoremap <leader>ts /\s\+$<cr>
+
 " 打开 {{{2
 " ----
 
@@ -290,6 +293,9 @@ cnoremap <c-q> <c-v>
 " 禁用 K 键看手册
 nnoremap K <nop>
 
+" 禁用 Q 键进入 Ex 模式
+nnoremap Q <nop>
+
 " 文件类型切换
 nnoremap <leader>ft :set filetype=
 
@@ -301,13 +307,16 @@ nnoremap <leader>fe :set fileencoding=utf-8
 
 " diff 操作
 nnoremap <leader>dt :windo diffthis<cr>
-nnoremap <leader>df :windo diffoff<cr>
+nnoremap <leader>do :windo diffoff<cr>
 
 " 写入
 nnoremap <leader>w :w<cr>
 
 " sudo 写入
 nnoremap <leader>W :w !sudo tee % >/dev/null
+
+" 退出
+nnoremap <leader>q :q<cr>
 
 " 在 quickfix 窗口显示上次查找
 nnoremap <leader>? :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
