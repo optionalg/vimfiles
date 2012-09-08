@@ -280,6 +280,10 @@ nnoremap <leader>tev :tabedit $MYVIMRC<cr>
 " 命令行 {{{2
 " ------
 
+" 按照显示行移动
+nnoremap j gj
+nnoremap k gk
+
 " 移动
 cnoremap <c-a> <home>
 cnoremap <c-e> <end>
