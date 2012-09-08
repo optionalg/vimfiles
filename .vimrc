@@ -356,6 +356,9 @@ autocmd GUIEnter * set visualbell t_vb=
 " 语法高亮 {{{2
 " --------
 
+" json
+autocmd BufNewFile,BufRead *.json setfiletype javascript
+
 " vimperatorrc 配置文件
 autocmd BufNewFile,BufRead *vimperatorrc* setfiletype vim
 
