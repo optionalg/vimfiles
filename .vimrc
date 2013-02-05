@@ -56,7 +56,7 @@ set fileencodings=utf-8,ucs-bom,gb18030,big5,default " 检测编码顺序
 set ignorecase                     " 忽略大小写查找
 set helplang=cn                    " 使用中文文档
 set listchars=tab:\|_,trail:·      " list样式制表符和空格显示
-set foldlevel=1					   " 自动折叠等级为1
+set foldlevel=1					   " 自动折叠等级为 1
 set foldlevelstart=99              " 默认打开不折叠
 set completeopt-=preview           " 补全不显示预览窗口
 set splitbelow                     " 分割窗口时新窗口在下方
@@ -87,9 +87,9 @@ set wildignore+=*.DS_Store                       " OSX 糟糕物
 " ----
 
 set autoindent                     " 开启自动缩进
-set cindent                        " 开启C语言的自动缩进
-set expandtab                      " 开启把Tab扩展为空格
-set tabstop=4                      " 设置Tab宽度为4个字符
+set cindent                        " 开启 C 语言的自动缩进
+set expandtab                      " 开启把 Tab 扩展为空格
+set tabstop=4                      " 设置 Tab 宽度为 4 个字符
 set softtabstop=4                  " 软缩进宽度
 set shiftwidth=4                   " 设置移动代码块宽度
 set shiftround                     " 移动代码块时取整到缩进宽度
@@ -116,16 +116,16 @@ catch
 endtry
 
 " 不同界面特别设置
-if has("gui_running")              " 使用GUI时
+if has("gui_running")              " 使用 GUI 时
     set guioptions-=T              " 关闭工具栏
     set guioptions-=m              " 关闭菜单栏
     set guioptions-=t              " 菜单不可撕下
-    set guioptions-=e              " 非GUI标签栏
-    set winaltkeys=no              " Alt键不映射到菜单上
+    set guioptions-=e              " 非 GUI 标签栏
+    set winaltkeys=no              " Alt 键不映射到菜单上
     set columns=116                " 设置窗口列数
     set lines=28                   " 设置窗口行数
     set autochdir                  " 自动 cd 打开文件的目录
-else                               " 使用CLI时
+else                               " 使用 CLI 时
     if &term == "xterm"            " 虚拟终端
         set t_Co=256               " 终端颜色数
     elseif &term == "linux"        " 控制台
@@ -412,4 +412,4 @@ let g:pyref_mapping = '<leader>k'
 " ----
 
 nnoremap <leader>O :Voom<cr>
-nnoremap <leader>o :Voom 
+nnoremap <leader>o :Voom
