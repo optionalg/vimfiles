@@ -124,6 +124,7 @@ if has("gui_running")              " 使用GUI时
     set winaltkeys=no              " Alt键不映射到菜单上
     set columns=116                " 设置窗口列数
     set lines=28                   " 设置窗口行数
+    set autochdir                  " 自动 cd 打开文件的目录
 else                               " 使用CLI时
     if &term == "xterm"            " 虚拟终端
         set t_Co=256               " 终端颜色数
