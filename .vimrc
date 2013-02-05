@@ -412,23 +412,3 @@ let g:pyref_mapping = '<leader>k'
 
 nnoremap <leader>O :Voom<cr>
 nnoremap <leader>o :Voom 
-
-" 未整理 {{{1
-" ======
-
-" 复制到系统剪贴板
-"vnoremap <leader>y <esc>"+y
-"vnoremap <leader>Y <esc>"+Y
-
-" 插入系统剪贴板内容
-"nnoremap <leader>p <esc>"+p
-"nnoremap <leader>P <esc>"+P
-
-" 主窗口大小变化时，vim里的分割窗口也自动调整
-"autocmd VimResized * exe "normal! \<c-w>="
-
-" 下划线分隔转驼峰
-"nmap <leader>c viw:s/_\([a-z]\)/\u\1/g<cr>gUl:nohl<cr>
-
-" 驼峰转下划线分隔
-"nmap <leader>u viw:s/\<\@!\([A-Z]\)/\_\l\1/g<cr>gul:nohl<cr>
