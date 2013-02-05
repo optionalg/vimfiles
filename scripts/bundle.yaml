@@ -99,6 +99,11 @@ golang:
     type: dir
 
 actionscript:
-    desc: action 语法高亮
+    desc: actionscript 语法高亮
     home: http://www.vim.org/scripts/script.php?script_id=1585
     repo: https://github.com/vim-scripts/actionscript.vim--Jethani
+
+jslint:
+    desc: javascript 编码风格检查
+    home: http://www.vim.org/scripts/script.php?script_id=2729
+    repo: https://github.com/hallettj/jslint.vim.git
