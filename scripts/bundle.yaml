@@ -104,10 +104,10 @@ actionscript:
     home: http://www.vim.org/scripts/script.php?script_id=1585
     repo: https://github.com/vim-scripts/actionscript.vim--Jethani
 
-jslint:
+jshint:
     desc: javascript 编码风格检查
-    home: http://www.vim.org/scripts/script.php?script_id=2729
-    repo: https://github.com/hallettj/jslint.vim.git
+    home: https://github.com/walm/jshint.vim
+    repo: https://github.com/walm/jshint.vim.git
 
 # 框架辅助
 
