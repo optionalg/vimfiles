@@ -1,32 +1,23 @@
 #!/bin/bash
 
-function color_echo() {
-    echo -e "\e[1;33m$@\e[0m"
+function update() {
+    type=$1
+    command=${@:1}
+    for dir in *.$type; do
+        if [ ! -d "$dir" ]; then
+            continue
+        fi
+        echo -e "\e[1;33mupdate:\e[1;36m${dir}\$\e[0m" "$command"
+        cd $dir
+        $command
+        cd ..
+        echo
+    done
 }
 
-bundle_path=~/.vim/bundle
-cd $bundle_path
-
-# git
-for i in *.git; do
-    cd $i
-    color_echo "Updating $i"
-    git pull --rebase
-    cd ..
-done
-
-# hg
-for i in *.hg; do
-    cd $i
-    color_echo "Updating $i"
-    hg pull
-    cd ..
-done
-
-# svn
-for i in *.svn; do
-    cd $i
-    color_echo "Updating $i"
-    svn update
-    cd ..
-done
+(
+    cd ~/.vim/bundle
+    update git pull --rebase
+    update hg pull
+    update svn update
+)
