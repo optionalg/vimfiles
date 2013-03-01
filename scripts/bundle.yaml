@@ -1,5 +1,7 @@
 # 插件列表
 
+# 常规
+
 pathogen:
     desc: 插件管理
     home: http://www.vim.org/scripts/script.php?script_id=2332
@@ -11,6 +13,11 @@ vimcdoc:
     repo: https://vimcdoc.svn.sourceforge.net/svnroot/vimcdoc/trunk/
     type: svn
 
+xterm-color-table:
+    desc: 终端颜色表
+    home: http://www.vim.org/scripts/script.php?script_id=3412
+    repo: https://github.com/guns/xterm-color-table.vim.git
+
 nerdtree:
     desc: 文件目录树
     home: http://www.vim.org/scripts/script.php?script_id=1658
@@ -21,20 +28,47 @@ nerdcommenter:
     home: http://www.vim.org/scripts/script.php?script_id=1218
     repo: https://github.com/scrooloose/nerdcommenter.git
 
-markdown:
-    desc: markdown 语法高亮
-    home: http://www.vim.org/scripts/script.php?script_id=1242
-    repo: https://github.com/plasticboy/vim-markdown.git
-
-xterm-color-table:
-    desc: 终端颜色表
-    home: http://www.vim.org/scripts/script.php?script_id=3412
-    repo: https://github.com/guns/xterm-color-table.vim.git
+voom:
+    desc: 文档大纲
+    home: http://www.vim.org/scripts/script.php?script_id=2657
+    repo: https://github.com/vim-scripts/VOoM.git
 
 indent-object:
     desc: 缩进文本对象
     home: http://www.vim.org/scripts/script.php?script_id=3037
     repo: https://github.com/michaeljsmith/vim-indent-object.git
+
+renamer:
+    desc: 文件重命名
+    home: http://www.vim.org/scripts/script.php?script_id=1721
+    repo: https://github.com/vim-scripts/renamer.vim.git
+
+tabular:
+    desc: 文本对齐格式化
+    home: http://www.vim.org/scripts/script.php?script_id=3464
+    repo: https://github.com/godlygeek/tabular.git
+
+# 领域特定语言
+
+zencoding:
+    desc: html 编辑
+    home: http://www.vim.org/scripts/script.php?script_id=2981
+    repo: https://github.com/mattn/zencoding-vim.git
+
+matchtag:
+    desc: html 当前对应标签高亮
+    home: http://www.vim.org/scripts/script.php?script_id=3818
+    repo: https://github.com/gregsexton/MatchTag.git
+
+rsttable:
+    desc: reStructuredText 表格对齐格式化
+    home: http://www.vim.org/scripts/script.php?script_id=3041
+    repo: https://github.com/vim-scripts/RST-Tables.git
+
+markdown:
+    desc: markdown 语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=1242
+    repo: https://github.com/plasticboy/vim-markdown.git
 
 protobuf:
     desc: proto 语法高亮
@@ -42,55 +76,22 @@ protobuf:
     repo: https://protobuf.googlecode.com/svn/trunk/editors/
     type: svn
 
-zencoding:
-    desc: html 编辑
-    home: http://www.vim.org/scripts/script.php?script_id=2981
-    repo: https://github.com/mattn/zencoding-vim.git
+nginx:
+    desc: nginx 配置文件语法高亮
+    home: http://www.vim.org/scripts/script.php?script_id=1886
+    repo: https://github.com/vim-scripts/nginx.vim.git
 
-voom:
-    desc: 文档大纲
-    home: http://www.vim.org/scripts/script.php?script_id=2657
-    repo: https://github.com/vim-scripts/VOoM.git
+# 通用编程语言
 
 pyflakes:
     desc: python 语法检查
     home: http://www.vim.org/scripts/script.php?script_id=2441
     repo: https://github.com/kevinw/pyflakes-vim.git
 
-renamer:
-    desc: 文件重命名
-    home: http://www.vim.org/scripts/script.php?script_id=1721
-    repo: https://github.com/vim-scripts/renamer.vim.git
-
 pyref:
     desc: 在浏览器查看 python 文档
     home: http://www.vim.org/scripts/script.php?script_id=3104
     repo: https://github.com/xolox/vim-pyref.git
-
-matchtag:
-    desc: html 当前对应标签高亮
-    home: http://www.vim.org/scripts/script.php?script_id=3818
-    repo: https://github.com/gregsexton/MatchTag.git
-
-rails:
-    desc: Rails 开发
-    home: http://www.vim.org/scripts/script.php?script_id=1567
-    repo: https://github.com/tpope/vim-rails.git
-
-tabular:
-    desc: 文本对齐格式化
-    home: http://www.vim.org/scripts/script.php?script_id=3464
-    repo: https://github.com/godlygeek/tabular.git
-
-nginx:
-    desc: nginx 配置文件语法高亮
-    home: http://www.vim.org/scripts/script.php?script_id=1886
-    repo: https://github.com/vim-scripts/nginx.vim.git
-
-rsttable:
-    desc: reStructuredText 表格对齐格式化
-    home: http://www.vim.org/scripts/script.php?script_id=3041
-    repo: https://github.com/vim-scripts/RST-Tables.git
 
 golang:
     desc: go 语法高亮
@@ -107,3 +108,10 @@ jslint:
     desc: javascript 编码风格检查
     home: http://www.vim.org/scripts/script.php?script_id=2729
     repo: https://github.com/hallettj/jslint.vim.git
+
+# 框架辅助
+
+rails:
+    desc: Rails 开发
+    home: http://www.vim.org/scripts/script.php?script_id=1567
+    repo: https://github.com/tpope/vim-rails.git
