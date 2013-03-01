@@ -117,14 +117,15 @@ endtry
 
 " 不同界面特别设置
 if has("gui_running")              " 使用 GUI 时
+    set autochdir                  " 自动 cd 打开文件的目录
     set guioptions-=T              " 关闭工具栏
     set guioptions-=m              " 关闭菜单栏
     set guioptions-=t              " 菜单不可撕下
     set guioptions-=e              " 非 GUI 标签栏
     set winaltkeys=no              " Alt 键不映射到菜单上
-    set columns=116                " 设置窗口列数
-    set lines=28                   " 设置窗口行数
-    set autochdir                  " 自动 cd 打开文件的目录
+    set columns=160                " 设置窗口列数
+    set lines=50                   " 设置窗口行数
+    winpos 100 100                 " 窗口位置
 else                               " 使用 CLI 时
     if &term == "xterm"            " 虚拟终端
         set t_Co=256               " 终端颜色数
