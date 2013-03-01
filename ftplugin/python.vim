@@ -1,20 +1,22 @@
-"-----------------------------------------------------------------------------
-" 执行程序
-"-----------------------------------------------------------------------------
+" ######
+" Python
+" ######
 
-if has("gui_running")
-	map <F9> :silent !x-terminal-emulator -x bash -c "python %; read -s -n 1 -p 'Press any key to exit...'" &<CR>
-else
-	map <F9> :!python %<CR>
-endif
+" 执行程序 {{{1
+" ========
 
-"-----------------------------------------------------------------------------
-" * 缩写
-"-----------------------------------------------------------------------------
+noremap <f9> :!python %<cr>
+noremap <f10> :Term python %<cr>
+
+" 缩写 {{{1
+" ====
+
+" call stack
+iabbrev pypk import traceback; traceback.print_stack()
 
 " python shell
 iabbrev pysh import code; code.interact(locals=locals())
-"
+
 " python 调试器
 iabbrev pybk import pdb; pdb.set_trace()
 
