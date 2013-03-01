@@ -11,7 +11,7 @@ cd $bundle_path
 for i in *.git; do
     cd $i
     color_echo "Updating $i"
-    git pull
+    git pull --rebase
     cd ..
 done
 
