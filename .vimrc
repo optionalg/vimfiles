@@ -1,6 +1,6 @@
-﻿" *****************
+﻿" #################
 " muzuiget 的 vimrc
-" *****************
+" #################
 
 " 初始化 {{{1
 " ======
@@ -55,8 +55,8 @@ set fileencoding=utf-8             " 文件默认编码
 set fileencodings=utf-8,ucs-bom,gb18030,big5,default " 检测编码顺序
 set ignorecase                     " 忽略大小写查找
 set helplang=cn                    " 使用中文文档
-set listchars=tab:\|_,trail:·      " list样式制表符和空格显示
-set foldlevel=1					   " 自动折叠等级为 1
+set listchars=tab:\|_,trail:·      " list 样式制表符和空格显示
+set foldlevel=1                    " 自动折叠等级为 1
 set foldlevelstart=99              " 默认打开不折叠
 set completeopt-=preview           " 补全不显示预览窗口
 set splitbelow                     " 分割窗口时新窗口在下方
@@ -235,10 +235,10 @@ inoremap <a-o> <esc>o
 " 在光标上插入新行
 inoremap <a-O> <esc>O
 
-" 插入当前行第一个单词到下一行,用b寄存器
+" 插入当前行第一个单词到下一行，用 b 寄存器
 inoremap <a-b> <esc>^"byeo<c-r>b
 
-" 插入光标出上一行单词，用g寄存器
+" 插入光标出上一行单词，用 g 寄存器
 inoremap <a-g> <esc>keb"gyejA<c-r>i
 
 " 删除 {{{3
@@ -278,8 +278,8 @@ nnoremap <leader>ts /\s\+$<cr>
 nnoremap <leader>ev :e $MYVIMRC<cr>
 nnoremap <leader>tev :tabedit $MYVIMRC<cr>
 
-" 命令行 {{{2
-" ------
+" 命令 {{{2
+" ----
 
 " 按照显示行移动
 nnoremap j gj
@@ -321,7 +321,10 @@ nnoremap <leader>w :w<cr>
 nnoremap <leader>W :w !sudo tee % >/dev/null
 
 " 退出
-nnoremap <leader>q :q<cr>
+nnoremap <leader>q :qa<cr>
+
+" 强制退出
+nnoremap <leader>Q :qa!<cr>
 
 " 在 quickfix 窗口显示上次查找
 nnoremap <leader>? :execute 'vimgrep /'.@/.'/g %'<cr>:copen<cr>
@@ -345,15 +348,28 @@ function! PreviewDown()
        silent! wincmd p
    endif
 endf
+autocmd BufWinEnter * call PreviewDown()
+
+" 调用外部终端执行命令
+function! Terminal(command)
+    let expandedCommand = a:command
+    for part in split(a:command, ' ')
+        if part[0] =~ '\v[%#<]'
+            let expanedPart = fnameescape(expand(part))
+            let expandedCommand = substitute(expandedCommand, part, expanedPart, '')
+        endif
+    endfor
+    let wrapedCommand = 'gnome-terminal --geometry=160x50+100+100 -x /bin/sh -c "$command; read -s -n 1 -p \"Press any key to exit...\""'
+    let wrapedCommand = substitute(wrapedCommand, '\$command', expandedCommand, '')
+    execute 'silent !'.wrapedCommand
+endfunction
+command! -complete=shellcmd -nargs=+ Term call Terminal(<q-args>)
 
 " 自动命令 {{{1
 " ========
 
 " 常规 {{{2
 " ----
-
-" 预览窗口显示在屏幕下方
-autocmd BufWinEnter * call PreviewDown()
 
 " 禁用视觉响铃
 autocmd GUIEnter * set visualbell t_vb=
