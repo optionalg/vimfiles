@@ -405,6 +405,9 @@ autocmd BufNewFile,BufRead *.cue setfiletype cue
 " go
 autocmd BufNewFile,BufRead *.go setfiletype go
 
+" xul
+autocmd BufNewFile,BufRead *.xul setfiletype xml
+
 " actionscript
 augroup filetypedetect
     autocmd! BufNewFile,BufRead *.as setfiletype actionscript
