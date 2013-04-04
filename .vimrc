@@ -79,7 +79,7 @@ set wildignore+=*.pyc                            " Python 字节码
 set wildignore+=*.sw?                            " Vim 交换文件
 set wildignore+=*.aux,*.out,*.toc                " LaTeX 文件
 set wildignore+=*.jpg,*.bmp,*.gif,*.png,*.jpeg   " 二进制图像
-set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest " 已编译的对象文件
+set wildignore+=*.o,*.obj,*.exe,*.dll            " 已编译的对象文件
 set wildignore+=*.luac                           " Lua 字节码
 set wildignore+=*.DS_Store                       " OSX 糟糕物
 
