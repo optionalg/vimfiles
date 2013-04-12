@@ -7,6 +7,8 @@
 
 noremap <f9> :!python %<cr>
 noremap <f10> :Term python %<cr>
+noremap <s-f9> :!python % 
+noremap <s-f10> :Term python % 
 
 " 缩写 {{{1
 " ====
