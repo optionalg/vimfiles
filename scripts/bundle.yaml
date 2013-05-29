@@ -70,6 +70,11 @@ markdown:
     home: http://www.vim.org/scripts/script.php?script_id=1242
     repo: https://github.com/plasticboy/vim-markdown.git
 
+less:
+    desc: less css 语法高亮
+    home: https://github.com/groenewege/vim-less
+    repo: https://github.com/groenewege/vim-less.git
+
 protobuf:
     desc: proto 语法高亮
     home: http://code.google.com/p/protobuf/

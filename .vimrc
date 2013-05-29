@@ -413,6 +413,9 @@ augroup filetypedetect
     autocmd! BufNewFile,BufRead *.as setfiletype actionscript
 augroup end
 
+" less
+autocmd BufNewFile,BufRead *.less set filetype=less
+
 " 插件设置 {{{1
 " ========
 
