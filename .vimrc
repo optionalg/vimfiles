@@ -28,7 +28,7 @@ endif
 " 使用 pathogen 插件
 try
     runtime bundle/pathogen.git/autoload/pathogen.vim
-    call pathogen#runtime_append_all_bundles()
+    call pathogen#incubate()
 catch
 endtry
 
